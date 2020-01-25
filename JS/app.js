@@ -12,7 +12,8 @@ else if (question1 === 'N' || question1 === 'NO'){
 }
 else{
   while(question1 !== 'Y' && question1 !== 'YES' && question1 !== 'N' && question1 !== 'NO'){
-    prompt('Please enter a Yes or a No');
+    question1 = prompt('Please enter a Yes or a No');
+    question1 = question1.toUpperCase();
     if (question1 === 'Y' || question1 === 'YES'){
       alert('That\'s correct!');
     }
@@ -32,7 +33,8 @@ else if (question2 === 'N' || question2 === 'NO'){
 }
 else{
   while(question2 !== 'Y' && question2 !== 'YES' && question2 !== 'N' && question2 !== 'NO'){
-    prompt('Please enter a Yes or a No');
+    question2 = prompt('Please enter a Yes or a No');
+    question2 = question2.toUpperCase();
     if (question2 === 'Y' || question2 === 'YES'){
       alert('WRONG!!! I don\'t have any tattoos yet!');
     }
@@ -52,7 +54,8 @@ else if (question3 === 'N' || question3 === 'NO'){
 }
 else{
   while(question3 !== 'Y' && question3 !== 'YES' && question3 !== 'N' && question3 !== 'NO'){
-    prompt('Please enter a Yes or a No');
+    question3 = prompt('Please enter a Yes or a No');
+    question3 = question3.toUpperCase();
     if (question3 === 'Y' || question3 === 'YES'){
       alert('WRONG!!! I don\'t have a college degree!');
     }
@@ -72,7 +75,8 @@ else if (question4 === 'N' || question4 === 'NO'){
 }
 else{
   while(question4 !== 'Y' && question4 !== 'YES' && question4 !== 'N' && question4 !== 'NO'){
-    prompt('Please enter a Yes or a No');
+    question4 = prompt('Please enter a Yes or a No');
+    question4 = question4.toUpperCase();
     if (question4 === 'Y' || question4 === 'YES'){
       alert('WRONG!!! I don\'t collect lint purposely!');
     }
@@ -82,7 +86,7 @@ else{
   }
 
 }
-var question5 = prompt('Do you think I\'ve got a college degree?');
+var question5 = prompt('Do you think I collect records?');
 question5 = question5.toUpperCase();
 if (question5 === 'Y' || question5 === 'YES'){
   alert('That\'s correct!');
@@ -92,13 +96,15 @@ else if (question5 === 'N' || question5 === 'NO'){
 }
 else{
   while(question5 !== 'Y' && question5 !== 'YES' && question5 !== 'N' && question5 !== 'NO'){
-    prompt('Please enter a Yes or a No');
+    question5 = prompt('Please enter a Yes or a No');
+    question5 = question5.toUpperCase();
+    if (question5 === 'Y' || question5 === 'YES'){
+      alert('That\'s correct!');
+    }
+    else if (question5 === 'N' || question5 === 'NO'){
+      alert('WRONG!!! I do collect records');
+    }
   }
-  if (question5 === 'Y' || question5 === 'YES'){
-    alert('That\'s correct!');
-  }
-  else if (question5 === 'N' || question5 === 'NO'){
-    alert('WRONG!!! I do collect records');
-  }
+
 }
 
