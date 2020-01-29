@@ -119,23 +119,24 @@ else if (question5){
   }
   while(question5 !== 'Y' && question5 !== 'YES' && question5 !== 'N' && question5 !== 'NO');
 }
+var randomNumber = (Math.floor(Math.random()*10)) + 1;
 for(var i=0; i<4; i++){
-  var question6 = prompt('How old do you think I am?');
+  var question6 = prompt('Guess a number between 1 and 10');
   question6 = parseInt(question6);
-  if (question6 === 28) {
+  if (question6 === randomNumber) {
     alert('That\'s correct!');
     correctAnswers++;
     break;
   }
-  else if (question6 > 28){
-    alert('I\'m not quite ' + question6 + '!');
+  else if (question6 > randomNumber){
+    alert('That\'s too high!');
   }
-  else if (question6 < 28){
-    alert('I\'m a little older than ' + question6 + '!');
+  else if (question6 < randomNumber){
+    alert('That\'s too low!');
   }
 }
-if (question6 !== 28){
-  alert('Actually, I\'m 28.');
+if (question6 !== randomNumber){
+  alert('Actually, the number was ' + randomNumber + '.');
 }
 var question7Answers = ['PAISLEY', 'FLANNEL', 'HAWAIIAN', 'CAMOUFLAGE'];
 for (var x=0; x<6; x++){
