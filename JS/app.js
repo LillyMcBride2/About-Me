@@ -148,38 +148,42 @@ function question6(){
     alert('Actually, the number was ' + randomNumber + '.');
   }
 }
-// var question7Answers = ['PAISLEY', 'FLANNEL', 'HAWAIIAN', 'CAMOUFLAGE'];
-// for (var x=0; x<6; x++){
-//   var question7 = prompt('Can you guess one of the four most influential fabric patterns of the day?');
-//   if (question7.toUpperCase() === question7Answers[0]){
-//     alert('That\'s a correct answer!');
-//     correctAnswers++;
-//     break;
-//   }
-//   else if (question7.toUpperCase() === question7Answers[1]){
-//     alert('That\'s a correct answer!');
-//     correctAnswers++;
-//     break;
-//   }
-//   else if (question7.toUpperCase() === question7Answers[2]){
-//     alert('That\'s a correct answer!');
-//     correctAnswers++;
-//     break;
-//   }
-//   else if (question7.toUpperCase() === question7Answers[1]){
-//     alert('That\'s a correct answer!');
-//     correctAnswers++;
-//     break;
-//   }
-//   else{
-//     alert('Sorry, that is not a correct answer!');
-//   }
-// }
-// alert('The correct answers were: paisley, flannel, hawaiian, and camouflage!');
-// alert('Your final score on my quiz is ' + correctAnswers + ' out of 7!');
+function question7(){
+  var question7Answers = ['PAISLEY', 'FLANNEL', 'HAWAIIAN', 'CAMOUFLAGE'];
+  for (var x=0; x<6; x++){
+    var question7 = prompt('Can you guess one of the four most influential fabric patterns of the day?');
+    if (question7.toUpperCase() === question7Answers[0]){
+      alert('That\'s a correct answer!');
+      correctAnswers++;
+      break;
+    }
+    else if (question7.toUpperCase() === question7Answers[1]){
+      alert('That\'s a correct answer!');
+      correctAnswers++;
+      break;
+    }
+    else if (question7.toUpperCase() === question7Answers[2]){
+      alert('That\'s a correct answer!');
+      correctAnswers++;
+      break;
+    }
+    else if (question7.toUpperCase() === question7Answers[1]){
+      alert('That\'s a correct answer!');
+      correctAnswers++;
+      break;
+    }
+    else{
+      alert('Sorry, that is not a correct answer!');
+    }
+  }
+  alert('The correct answers were: paisley, flannel, hawaiian, and camouflage!');
+  alert('Your final score on my quiz is ' + correctAnswers + ' out of 7!');
+}
+
 question1();
 question2();
 question3();
 question4();
 question5();
 question6();
+question7();
