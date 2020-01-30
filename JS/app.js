@@ -101,30 +101,32 @@ function question4(){
     }
     while(question4 !== 'Y' && question4 !== 'YES' && question4 !== 'N' && question4 !== 'NO');
   }
-} 
-// var question5 = prompt('Do you think I collect records?');
-// question5 = question5.toUpperCase();
-// if (question5 === 'Y' || question5 === 'YES'){
-//   alert('That\'s correct!');
-//   correctAnswers++;
-// }
-// else if (question5 === 'N' || question5 === 'NO'){
-//   alert('WRONG!!! I do collect records');
-// }
-// else if (question5){
-//   do {
-//     question5 = prompt('Please enter a Yes or a No');
-//     question5 = question5.toUpperCase();
-//     if (question5 === 'Y' || question5 === 'YES'){
-//       alert('That\'s correct!');
-//       correctAnswers++;
-//     }
-//     else if (question5 === 'N' || question5 === 'NO'){
-//       alert('WRONG!!! I do collect records');
-//     }
-//   }
-//   while(question5 !== 'Y' && question5 !== 'YES' && question5 !== 'N' && question5 !== 'NO');
-// }
+}
+function question5(){
+  var question5 = prompt('Do you think I collect records?');
+  question5 = question5.toUpperCase();
+  if (question5 === 'Y' || question5 === 'YES'){
+    alert('That\'s correct!');
+    correctAnswers++;
+  }
+  else if (question5 === 'N' || question5 === 'NO'){
+    alert('WRONG!!! I do collect records');
+  }
+  else if (question5){
+    do {
+      question5 = prompt('Please enter a Yes or a No');
+      question5 = question5.toUpperCase();
+      if (question5 === 'Y' || question5 === 'YES'){
+        alert('That\'s correct!');
+        correctAnswers++;
+      }
+      else if (question5 === 'N' || question5 === 'NO'){
+        alert('WRONG!!! I do collect records');
+      }
+    }
+    while(question5 !== 'Y' && question5 !== 'YES' && question5 !== 'N' && question5 !== 'NO');
+  }
+}
 // var randomNumber = (Math.floor(Math.random()*10)) + 1;
 // for(var i=0; i<4; i++){
 //   var question6 = prompt('Guess a number between 1 and 10');
@@ -177,3 +179,4 @@ question1();
 question2();
 question3();
 question4();
+question5();
