@@ -27,30 +27,31 @@ function question1(){
     while (question1 !== 'Y' && question1 !== 'YES' && question1 !== 'N' && question1 !== 'NO');
   }
 }
-// var question2 = prompt('Do you think I have any tattoos?');
-// question2 = question2.toUpperCase();
-// if (question2 === 'Y' || question2 === 'YES'){
-//   alert('WRONG!!! I don\'t have any tattoos yet!');
-// }
-// else if (question2 === 'N' || question2 === 'NO'){
-//   alert('That\'s correct!');
-//   correctAnswers++;
-// }
-// else if (question2){
-//   do {
-//     question2 = prompt('Please enter a Yes or a No');
-//     question2 = question2.toUpperCase();
-//     if (question2 === 'Y' || question2 === 'YES'){
-//       alert('WRONG!!! I don\'t have any tattoos yet!');
-//     }
-//     else if (question2 === 'N' || question2 === 'NO'){
-//       alert('That\'s correct!');
-//       correctAnswers++;
-//     }
-//   }
-//   while(question2 !== 'Y' && question2 !== 'YES' && question2 !== 'N' && question2 !== 'NO');
-
-// }
+function question2(){
+  var question2 = prompt('Do you think I have any tattoos?');
+  question2 = question2.toUpperCase();
+  if (question2 === 'Y' || question2 === 'YES'){
+    alert('WRONG!!! I don\'t have any tattoos yet!');
+  }
+  else if (question2 === 'N' || question2 === 'NO'){
+    alert('That\'s correct!');
+    correctAnswers++;
+  }
+  else if (question2){
+    do {
+      question2 = prompt('Please enter a Yes or a No');
+      question2 = question2.toUpperCase();
+      if (question2 === 'Y' || question2 === 'YES'){
+        alert('WRONG!!! I don\'t have any tattoos yet!');
+      }
+      else if (question2 === 'N' || question2 === 'NO'){
+        alert('That\'s correct!');
+        correctAnswers++;
+      }
+    }
+    while(question2 !== 'Y' && question2 !== 'YES' && question2 !== 'N' && question2 !== 'NO');
+  }
+}
 // var question3 = prompt('Do you think I\'ve got a college degree?');
 // question3 = question3.toUpperCase();
 // if (question3 === 'Y' || question3 === 'YES'){
@@ -169,3 +170,4 @@ function question1(){
 // alert('The correct answers were: paisley, flannel, hawaiian, and camouflage!');
 // alert('Your final score on my quiz is ' + correctAnswers + ' out of 7!');
 question1();
+question2();
