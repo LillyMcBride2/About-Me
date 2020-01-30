@@ -77,29 +77,31 @@ function question3(){
     while(question3 !== 'Y' && question3 !== 'YES' && question3 !== 'N' && question3 !== 'NO');
   }
 }
-// var question4 = prompt('Do you think I purposely collect lint?');
-// question4 = question4.toUpperCase();
-// if (question4 === 'Y' || question4 === 'YES'){
-//   alert('WRONG!!! I don\'t collect lint purposely!');
-// }
-// else if (question4 === 'N' || question4 === 'NO'){
-//   alert('That\'s correct!');
-//   correctAnswers++;
-// }
-// else if(question4){
-//   do {
-//     question4 = prompt('Please enter a Yes or a No');
-//     question4 = question4.toUpperCase();
-//     if (question4 === 'Y' || question4 === 'YES'){
-//       alert('WRONG!!! I don\'t collect lint purposely!');
-//     }
-//     else if (question4 === 'N' || question4 === 'NO'){
-//       alert('That\'s correct!');
-//       correctAnswers++;
-//     }
-//   }
-//   while(question4 !== 'Y' && question4 !== 'YES' && question4 !== 'N' && question4 !== 'NO');
-// }
+function question4(){
+  var question4 = prompt('Do you think I purposely collect lint?');
+  question4 = question4.toUpperCase();
+  if (question4 === 'Y' || question4 === 'YES'){
+    alert('WRONG!!! I don\'t collect lint purposely!');
+  }
+  else if (question4 === 'N' || question4 === 'NO'){
+    alert('That\'s correct!');
+    correctAnswers++;
+  }
+  else if(question4){
+    do {
+      question4 = prompt('Please enter a Yes or a No');
+      question4 = question4.toUpperCase();
+      if (question4 === 'Y' || question4 === 'YES'){
+        alert('WRONG!!! I don\'t collect lint purposely!');
+      }
+      else if (question4 === 'N' || question4 === 'NO'){
+        alert('That\'s correct!');
+        correctAnswers++;
+      }
+    }
+    while(question4 !== 'Y' && question4 !== 'YES' && question4 !== 'N' && question4 !== 'NO');
+  }
+} 
 // var question5 = prompt('Do you think I collect records?');
 // question5 = question5.toUpperCase();
 // if (question5 === 'Y' || question5 === 'YES'){
@@ -174,3 +176,4 @@ function question3(){
 question1();
 question2();
 question3();
+question4();
