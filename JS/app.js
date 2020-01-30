@@ -52,29 +52,31 @@ function question2(){
     while(question2 !== 'Y' && question2 !== 'YES' && question2 !== 'N' && question2 !== 'NO');
   }
 }
-// var question3 = prompt('Do you think I\'ve got a college degree?');
-// question3 = question3.toUpperCase();
-// if (question3 === 'Y' || question3 === 'YES'){
-//   alert('WRONG!!! I don\'t have a college degree!');
-// }
-// else if (question3 === 'N' || question3 === 'NO'){
-//   alert('That\'s correct!');
-//   correctAnswers++;
-// }
-// else if (question3){
-//   do {
-//     question3 = prompt('Please enter a Yes or a No');
-//     question3 = question3.toUpperCase();
-//     if (question3 === 'Y' || question3 === 'YES'){
-//       alert('WRONG!!! I don\'t have a college degree!');
-//     }
-//     else if (question3 === 'N' || question3 === 'NO'){
-//       alert('That\'s correct!');
-//       correctAnswers++;
-//     }
-//   }
-//   while(question3 !== 'Y' && question3 !== 'YES' && question3 !== 'N' && question3 !== 'NO');
-// }
+function question3(){
+  var question3 = prompt('Do you think I\'ve got a college degree?');
+  question3 = question3.toUpperCase();
+  if (question3 === 'Y' || question3 === 'YES'){
+    alert('WRONG!!! I don\'t have a college degree!');
+  }
+  else if (question3 === 'N' || question3 === 'NO'){
+    alert('That\'s correct!');
+    correctAnswers++;
+  }
+  else if (question3){
+    do {
+      question3 = prompt('Please enter a Yes or a No');
+      question3 = question3.toUpperCase();
+      if (question3 === 'Y' || question3 === 'YES'){
+        alert('WRONG!!! I don\'t have a college degree!');
+      }
+      else if (question3 === 'N' || question3 === 'NO'){
+        alert('That\'s correct!');
+        correctAnswers++;
+      }
+    }
+    while(question3 !== 'Y' && question3 !== 'YES' && question3 !== 'N' && question3 !== 'NO');
+  }
+}
 // var question4 = prompt('Do you think I purposely collect lint?');
 // question4 = question4.toUpperCase();
 // if (question4 === 'Y' || question4 === 'YES'){
@@ -171,3 +173,4 @@ function question2(){
 // alert('Your final score on my quiz is ' + correctAnswers + ' out of 7!');
 question1();
 question2();
+question3();
